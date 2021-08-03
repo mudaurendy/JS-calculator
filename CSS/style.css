@@ -1,10 +1,10 @@
 body{
-    background-color:beige
+    background-color:red
     
 }
 
 .bg-image{
-    background-image: url("../Images/Calculator_phone.jpg");
+    background-image: url("../Images/Calculay.jpg");
     height: 100vh;
     filter: blur(5px);
     -webkit-filter: blur(2px);
@@ -13,3 +13,64 @@ body{
     background-size: cover;
 
 }
+
+.calculator-grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120, auto) repeat(5, 100px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.calculator-grid>button{
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid gold;
+    outline: none;
+    background-color: whitesmoke;
+    height: 80px;
+    transition: background-color .5s;
+
+}
+
+.calculator-grid>button:hover{
+    background-color: gold;
+}
+
+.span-two{
+    grid-column: span 2;
+}
+
+.output{
+    grid-column: 1/-1;
+    background-color: gold;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+
+}
+
+.output .previous-operand{
+    color: gray;
+    font-size: 1.5rem;
+
+}
+
+.output .current-operand{
+    color: rgb(85, 54, 54);
+    font-size: 1.5rem;
+}
+    
