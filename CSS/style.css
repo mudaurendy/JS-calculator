@@ -43,11 +43,11 @@ body{
 }
 
 .calculator-grid>button:hover{
-    background-color: gold;
+    background-color: gold
 }
 
 .span-two{
-    grid-column: span 2;
+    grid-column: span 2
 }
 
 .output{
@@ -70,7 +70,8 @@ body{
 }
 
 .output .current-operand{
-    color: rgb(85, 54, 54);
+    color: 
+    rgb(85, 54, 54);
     font-size: 1.5rem;
 }
     
